@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FindPatternItText.Controler">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAASAQAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Controler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FindPatternItText.PatternReplace">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PatternReplace.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FindPatternItText.PatternSearcher">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PatternSearcher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FindPatternItText.Program">
+    <Position X="1.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FindPatternItText.StringConstants">
+    <Position X="7.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASAAAAAAAAEAAAAAAAAAAAAAAIAAAAgCQAAAAAAAA=</HashCode>
+      <FileName>StringConstants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="FindPatternItText.ProgramMode">
+    <Position X="3.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>ProgramMode.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
