@@ -57,18 +57,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AlgorithmType.cs" />
-    <Compile Include="Controler.cs" />
-    <Compile Include="ILuckyTicketAlgorithm.cs" />
-    <Compile Include="ILuckyTicketFileParser.cs" />
-    <Compile Include="ILuckyTicketValidator.cs" />
+    <Compile Include="Enum\AlgorithmType.cs" />
+    <Compile Include="Controler\Controler.cs" />
+    <Compile Include="Interface\ILuckyTicketAlgorithm.cs" />
+    <Compile Include="Interface\ILuckyTicketFileParser.cs" />
+    <Compile Include="Interface\ILuckyTicketValidator.cs" />
     <Compile Include="LuckyTicketFileParser.cs" />
-    <Compile Include="MoskowAlgorithm.cs" />
-    <Compile Include="PiterAlgorithm.cs" />
+    <Compile Include="Algorothm\MoskowAlgorithm.cs" />
+    <Compile Include="Algorothm\PiterAlgorithm.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StringConstants.cs" />
-    <Compile Include="Ticket.cs" />
+    <Compile Include="Constants\StringConstants.cs" />
+    <Compile Include="Model\Ticket.cs" />
     <Compile Include="LuckyTicketValidator.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -76,6 +76,7 @@
     <Content Include="NLog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="LuckyTicketsClassDiagramm.cd" />
     <None Include="NLog.xsd">
       <SubType>Designer</SubType>
     </None>

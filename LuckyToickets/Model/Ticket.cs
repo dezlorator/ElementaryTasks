@@ -8,9 +8,13 @@ namespace LuckyTickets
 {
     public class Ticket
     {
-        #region public
+        #region private
 
         private byte[] TicketNumber;
+
+        #endregion
+
+        #region public
 
         public bool IsLucky { get; set; }
 
@@ -33,15 +37,15 @@ namespace LuckyTickets
 
         public Ticket(string number)
         {
-            TicketNumber = ConvertStringToBoolArray(number);
+            TicketNumber = ConvertStringToByteArray(number);
         }
 
-        private byte[] ConvertStringToBoolArray(string stringToConvert)
+        private byte[] ConvertStringToByteArray(string source)
         {
-            byte[] byteArrayOfTickets = new byte[stringToConvert.Length];
-            for (int i = 0; i < stringToConvert.Length; i++)
+            byte[] byteArrayOfTickets = new byte[source.Length];
+            for (int i = 0; i < source.Length; i++)
             {
-                byteArrayOfTickets[i] = byte.Parse(Convert.ToString(stringToConvert[i]));
+                byteArrayOfTickets[i] = byte.Parse(Convert.ToString(source[i]));
             }
 
             return byteArrayOfTickets;
@@ -50,6 +54,17 @@ namespace LuckyTickets
         public int GetLength()
         {
             return TicketNumber.Length;
+        }
+
+        public override string ToString()
+        {
+            StringBuilder ticketString = new StringBuilder();
+            foreach(byte b in TicketNumber)
+            {
+                ticketString.Append(b);
+            }
+
+            return ticketString.ToString();
         }
     }
 }

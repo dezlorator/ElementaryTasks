@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ArgumentsValidator">
+      <HintPath>..\..\Libraries\ArgumentsValidator\ArgumentsValidator\bin\Debug\ArgumentsValidator.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />

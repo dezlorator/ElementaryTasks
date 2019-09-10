@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LuckyTickets.MoskowAlgorithm" Collapsed="true">
+    <Position X="0.75" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Algorothm\MoskowAlgorithm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LuckyTickets.StringConstants" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASEAAAAAAgEBAAAAAAAAAAAAAIAAAAgCQIAAAAAAA=</HashCode>
+      <FileName>Constants\StringConstants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LuckyTickets.PiterAlgorithm" Collapsed="true">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Algorothm\PiterAlgorithm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LuckyTickets.Controler">
+    <Position X="6.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAQACAAAABAAAAAAAAIAABQAAAAEQAAI=</HashCode>
+      <FileName>Controler\Controler.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="luckyTicketAlgorithm" />
+      <Field Name="luckyTicketParser" />
+      <Field Name="ticketValidator" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LuckyTickets.Ticket" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAIAAUDAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Ticket.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LuckyTickets.LuckyTicketParser" Collapsed="true">
+    <Position X="1.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>LuckyTicketFileParser.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LuckyTickets.LuckyTicketValidator" Collapsed="true">
+    <Position X="4.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>LuckyTicketValidator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="LuckyTickets.ILuckyTicketAlgorithm" Collapsed="true">
+    <Position X="3.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Interface\ILuckyTicketAlgorithm.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="LuckyTickets.ILuckyTicketParser" Collapsed="true">
+    <Position X="3.5" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\ILuckyTicketFileParser.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="LuckyTickets.ILuckyTicketValidator" Collapsed="true">
+    <Position X="6.5" Y="4.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\ILuckyTicketValidator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="LuckyTickets.AlgorithmType" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAIAAAAAAAAAAAAAAAABAQAAAAAAAAAA=</HashCode>
+      <FileName>Enum\AlgorithmType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

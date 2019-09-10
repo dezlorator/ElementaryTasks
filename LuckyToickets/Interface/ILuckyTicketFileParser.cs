@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace LuckyTickets
 {
-    interface ILuckyTicketAlgorithm
+    public interface ILuckyTicketParser
     {
-        int Algorithm(List<Ticket> ticketList);
+        List<Ticket> CheckTicketsInLine(string ticketsString);
     }
 }

@@ -18,7 +18,7 @@ namespace EnvelopeComparisonTests
         public void SplitStringIntoArrayTest(string stringToValidate, string[] expected)
         {
             ICommandArgumentsParser parser = new CommandArgumentsParser();
-            Xunit.Assert.Equal(parser.SplitStringIntoArray(stringToValidate), expected);
+            Assert.Equal(parser.SplitStringIntoArray(stringToValidate), expected);
         }
     }
 }

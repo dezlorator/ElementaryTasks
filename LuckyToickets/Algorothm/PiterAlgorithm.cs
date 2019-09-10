@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace LuckyTickets
 {
-    class MoskowAlgorithm : ILuckyTicketAlgorithm
+    public class PiterAlgorithm : ILuckyTicketAlgorithm
     {
         public int Algorithm(List<Ticket> ticketList)
         {
             int numberOfLuckyTickets = 0;
-            for(int i = 0; i < ticketList.Count; i++)
+            for (int i = 0; i < ticketList.Count; i++)
             {
-                if(IsLuckyTicket(ticketList[i]))
+                if (IsLuckyTicket(ticketList[i]))
                 {
                     numberOfLuckyTickets++;
                 }
@@ -25,16 +25,20 @@ namespace LuckyTickets
         private bool IsLuckyTicket(Ticket ticketToCheck)
         {
             int getResult = 0;
-            for(int i = 0; i < ticketToCheck.GetLength() / 2; i++)
+            for (int i = 0; i < ticketToCheck.GetLength(); i++)
             {
-                getResult -= ticketToCheck[i];
-            }
-            for (int i = ticketToCheck.GetLength() / 2; i < ticketToCheck.GetLength(); i++)
-            {
-                getResult += ticketToCheck[i];
+                if (i % 2 == 0)
+                {
+                    getResult -= ticketToCheck[i];
+                }
+                else
+                {
+                    getResult += ticketToCheck[i];
+                }
             }
 
             return getResult == 0;
+
         }
     }
 }

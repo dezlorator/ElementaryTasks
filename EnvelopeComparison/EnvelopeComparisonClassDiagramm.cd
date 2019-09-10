@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EnvelopeComparison.StringConstants" Collapsed="true">
+    <Position X="10.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgBACAAAAAAABAAAAAAEAAAAAAAAAAAAAAQAGQAAAAA=</HashCode>
+      <FileName>Constants\StringConstants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnvelopeComparison.Controler">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAEABQACAIAgAAAAgAAAAIAAAAEAAAAAEBI=</HashCode>
+      <FileName>Controler\Controler.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="argumentsValidator" />
+      <Field Name="commandArgumentsParser" />
+      <Field Name="compareEnvelops" />
+      <Field Name="firstEnvelope" />
+      <Field Name="secondEnvelope" />
+      <Field Name="UI" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="EnvelopeComparison.Envelope" Collapsed="true">
+    <Position X="1.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Envelope.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnvelopeComparison.UI" Collapsed="true">
+    <Position X="1.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>UI\UI.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EnvelopeComparison.CommandArgumentsParser" Collapsed="true">
+    <Position X="10.25" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CommandArgumentsParser.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EnvelopeComparison.EnvelopeComparer" Collapsed="true">
+    <Position X="1" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EnvelopeComparer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="EnvelopeComparison.ICommandArgumentsParser" Collapsed="true">
+    <Position X="8.25" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ICommandArgumentsParser.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EnvelopeComparison.IEnvelopeComparer" Collapsed="true">
+    <Position X="3.25" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IEnvelopeComparer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EnvelopeComparison.IUserUI" Collapsed="true">
+    <Position X="3.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Interfaces\IUserUI.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ArgumentsValidator.IArgumentsValidator" Collapsed="true">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Enum Name="EnvelopeComparison.EnvelopeCompareStages" Collapsed="true">
+    <Position X="7.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAhAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Enum\EnvelopeCompareStages.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

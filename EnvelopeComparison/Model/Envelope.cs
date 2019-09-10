@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EnvelopeComparison
 {
-	class Envelope
+	public class Envelope
 	{
 
         #region property

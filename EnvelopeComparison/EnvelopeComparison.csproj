@@ -71,21 +71,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommandArgumentsParser.cs" />
-    <Compile Include="Controler.cs" />
-    <Compile Include="Envelope.cs" />
-    <Compile Include="EnvelopeCompare.cs" />
+    <Compile Include="Controler\Controler.cs" />
+    <Compile Include="Model\Envelope.cs" />
+    <Compile Include="Enum\EnvelopeCompareStages.cs" />
     <Compile Include="EnvelopeComparer.cs" />
-    <Compile Include="ICommandArgumentsParser.cs" />
-    <Compile Include="IEnvelopeComparer.cs" />
-    <Compile Include="IUserUI.cs" />
+    <Compile Include="Interfaces\ICommandArgumentsParser.cs" />
+    <Compile Include="Interfaces\IEnvelopeComparer.cs" />
+    <Compile Include="Interfaces\IUserUI.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StringConstants.cs" />
-    <Compile Include="UI.cs" />
+    <Compile Include="Constants\StringConstants.cs" />
+    <Compile Include="UI\UI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ClassDiagram1.cd" />
+    <None Include="EnvelopeComparisonClassDiagramm.cd" />
     <Content Include="NLog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>

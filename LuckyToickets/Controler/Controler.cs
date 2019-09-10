@@ -65,14 +65,16 @@ namespace LuckyTickets
                     logger.Info(StringConstants.PITER_ALGORITHM_USED);
                     break;
             }
-            UI.ConsoleOutPut(string.Format(StringConstants.OUTPUT_RESULT, luckyTicketAlgorithm.Algorithm(ticketList)));
+            UI.ConsoleOutPut(string.Format(StringConstants.OUTPUT_RESULT, 
+                luckyTicketAlgorithm.Algorithm(ticketList)));
         }
 
         private bool ValidateArguments(string[] commandArguments)
         {
             if (commandArguments.Length != SIZE_OF_THE_COMMAND_ARGUMENTS_ARRAY)
             {
-                UI.ConsoleOutPut(StringConstants.WRONG_NUMBER_OF_ARGUMENTS, StringConstants.INFO_ABOUT_INPUT);
+                UI.ConsoleOutPut(StringConstants.WRONG_NUMBER_OF_ARGUMENTS, 
+                    StringConstants.INFO_ABOUT_INPUT);
                 logger.Error(StringConstants.WRONG_NUMBER_OF_ARGUMENTS);
 
                 return false;

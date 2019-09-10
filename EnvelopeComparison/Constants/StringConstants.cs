@@ -16,7 +16,8 @@ namespace EnvelopeComparison
         public static string SECOND_IN_FIRST = "Second envelope can be put in a first one";
         public static string NONE_CAN_PUT = "None of the envelops can be put in another one";
         public static string IF_CONTINUE = "If you want to continue press y";
-        public static string INFO_ABOUT_PROGRAMM = "This programm checks if one envelope can fit in another. You should write four float number.\n ";
+        public static string INFO_ABOUT_PROGRAMM = "This programm checks if one envelope can fit" +
+            " in another. You should write four float number.\n ";
 
         #region ErrorMessages
 

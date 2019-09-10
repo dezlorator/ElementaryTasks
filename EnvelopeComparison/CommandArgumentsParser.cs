@@ -10,7 +10,8 @@ namespace EnvelopeComparison
     {
         public string[] SplitStringIntoArray(string stringToSplit)
         {
-            return stringToSplit.Split(new string[] { ", ", " "}, StringSplitOptions.RemoveEmptyEntries);
+            return stringToSplit.Split(new string[] { ", ", " "}, 
+                StringSplitOptions.RemoveEmptyEntries);
         }
     }
 }

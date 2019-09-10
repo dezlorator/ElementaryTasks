@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EnvelopeComparison
 {
-    class EnvelopeComparer : IEnvelopeComparer
+    public class EnvelopeComparer : IEnvelopeComparer
     {
         public EnvelopeCompareStages CompareEnvelops(Envelope first, Envelope second)
         {
@@ -27,8 +27,10 @@ namespace EnvelopeComparison
 
         private bool CkechOpportunityOfPut(Envelope firthEnvelope, Envelope secondEnvelope)
         {
-            return ((firthEnvelope.Height >= secondEnvelope.Height) && (firthEnvelope.Width >= secondEnvelope.Width)) ||
-                   ((firthEnvelope.Height >= secondEnvelope.Width) && (firthEnvelope.Width >= secondEnvelope.Height));
+            return ((firthEnvelope.Height >= secondEnvelope.Height) && 
+                (firthEnvelope.Width >= secondEnvelope.Width)) ||
+                   ((firthEnvelope.Height >= secondEnvelope.Width) && 
+                   (firthEnvelope.Width >= secondEnvelope.Height));
         }
     }
 }

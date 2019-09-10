@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberToWord", "NumberToWor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumericalSequence", "NumericalSequence\NumericalSequence.csproj", "{0DCCF098-DD69-40D1-A3BB-A626FA6AF120}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgumentsValidatorTests", "ArgumentsValidatorTests\ArgumentsValidatorTests.csproj", "{46CAA100-0C24-41E7-8CB9-48381AFF84AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuckyTicketTests", "LuckyTicketTests\LuckyTicketTests.csproj", "{90C43688-A35D-4B4D-A21B-8AE18D622BEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{0DCCF098-DD69-40D1-A3BB-A626FA6AF120}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DCCF098-DD69-40D1-A3BB-A626FA6AF120}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DCCF098-DD69-40D1-A3BB-A626FA6AF120}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46CAA100-0C24-41E7-8CB9-48381AFF84AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46CAA100-0C24-41E7-8CB9-48381AFF84AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46CAA100-0C24-41E7-8CB9-48381AFF84AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46CAA100-0C24-41E7-8CB9-48381AFF84AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90C43688-A35D-4B4D-A21B-8AE18D622BEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90C43688-A35D-4B4D-A21B-8AE18D622BEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90C43688-A35D-4B4D-A21B-8AE18D622BEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90C43688-A35D-4B4D-A21B-8AE18D622BEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

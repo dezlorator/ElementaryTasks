@@ -40,14 +40,14 @@ namespace CheckerBoard
 				height = Convert.ToInt32(args[0]);
 				width = Convert.ToInt32(args[1]);
 			}
-			catch (IndexOutOfRangeException e)
+			catch (IndexOutOfRangeException)
 			{
 				Console.WriteLine(WRONG_NUMBER_OF_ARGS);
 				Console.WriteLine(infoAboutProgramm);
 
 				return false;
 			}
-			catch (FormatException e)
+			catch (FormatException)
 			{
 				Console.WriteLine(WRONG_ARGS_TYPE);
 				Console.WriteLine(infoAboutProgramm);

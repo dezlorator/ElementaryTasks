@@ -7,12 +7,13 @@ using System.IO;
 
 namespace LuckyTickets
 {
-    class LuckyTicketParser : ILuckyTicketParser
+    public class LuckyTicketParser : ILuckyTicketParser
     {
 
         public List<Ticket> CheckTicketsInLine(string ticketsString)
         {
-            List<string> ticketsList = (ticketsString.Split(new char[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries)).ToList();
+            List<string> ticketsList = (ticketsString.Split(new char[] { ' ', ',' }, 
+                StringSplitOptions.RemoveEmptyEntries)).ToList();
             for (int i = 0; i < ticketsList.Count; i++)
             {
                 if ((ticketsList[i].Length % 2 != 0) || (!int.TryParse(ticketsList[i], out _)))

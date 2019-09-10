@@ -10,10 +10,12 @@ namespace LuckyTickets
     {
         #region public
 
-        public static string WELCOME_STRING = "Hello there. This programm takes file and find lucky tickets on it.\n ";
+        public static string WELCOME_STRING = "Hello there. This programm takes " +
+            "file and find lucky tickets on it.\n ";
 
-        public static string INFO_ABOUT_INPUT = "You should print values in such order - file path and searching mode\n" +
-                                                "Available mods : Piter and Moskow algorithm";
+        public static string INFO_ABOUT_INPUT = "You should print values in such order - " +
+            "file path and searching mode\n" +
+            "Available mods : Piter and Moskow algorithm";
 
         public static string OUTPUT_RESULT = "Number of lucky tickets = {0}";
 

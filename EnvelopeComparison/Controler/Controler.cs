@@ -49,8 +49,10 @@ namespace EnvelopeComparison
             do
             {
                 Initialize();
-                firstEnvelope = GetEnvelope(commandArgumentsParser.SplitStringIntoArray(UI.GetUserEnvelope()));
-                secondEnvelope = GetEnvelope(commandArgumentsParser.SplitStringIntoArray(UI.GetUserEnvelope()));
+                firstEnvelope = GetEnvelope(commandArgumentsParser.SplitStringIntoArray
+                    (UI.GetUserEnvelope()));
+                secondEnvelope = GetEnvelope(commandArgumentsParser.SplitStringIntoArray
+                    (UI.GetUserEnvelope()));
                 var result = compareEnvelops.CompareEnvelops(firstEnvelope, secondEnvelope);
                 switch (result)
                 {
@@ -72,7 +74,8 @@ namespace EnvelopeComparison
 
         private bool ContinueOrNot(string stringToCheck)
         {
-            return ((stringToCheck.ToUpper() == "Y") || (stringToCheck.ToUpper() == "YES"));
+            return ((stringToCheck.ToUpper() == "Y") || 
+                (stringToCheck.ToUpper() == "YES"));
         }
         
         private Envelope GetEnvelope(string[] commandArgumenrs)
@@ -80,16 +83,19 @@ namespace EnvelopeComparison
             while(!CheckCommandArguments(commandArgumenrs))
             {
                 UI.Print("Try again");
-                commandArgumenrs = commandArgumentsParser.SplitStringIntoArray(UI.GetUserEnvelope());
+                commandArgumenrs = commandArgumentsParser.SplitStringIntoArray
+                    (UI.GetUserEnvelope());
             }
-            return new Envelope(double.Parse(commandArgumenrs[0]), double.Parse(commandArgumenrs[1]));
+            return new Envelope(double.Parse(commandArgumenrs[0]), 
+                double.Parse(commandArgumenrs[1]));
         }
 
         private bool CheckCommandArguments(string []commandArgumenrs)
         {
             argumentsValidator = new ArgsValidator();
             logger.Info("Validator object was created");
-            if (!argumentsValidator.CheckArgsArrayLength(commandArgumenrs, Command_Arguments_Array_Length))
+            if (!argumentsValidator.CheckArgsArrayLength(commandArgumenrs, 
+                Command_Arguments_Array_Length))
             {
                 UI.Print(StringConstants.WRONG_NUMBER_OF_ARGUMENTS);
                 logger.Error(StringConstants.WRONG_NUMBER_OF_ARGUMENTS);

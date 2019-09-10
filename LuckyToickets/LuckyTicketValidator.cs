@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace LuckyTickets
 {
-    class LuckyTicketValidator : ILuckyTicketValidator
+    public class LuckyTicketValidator : ILuckyTicketValidator
     {
 
         public bool IsRightAlgorithm(string algorithmName)
         {
-            return (algorithmName.ToUpper() == "MOSKOW" || algorithmName.ToUpper() == "PITER");
+            return (algorithmName.ToUpper() == "MOSKOW" || 
+                algorithmName.ToUpper() == "PITER");
         }
     }
 }
