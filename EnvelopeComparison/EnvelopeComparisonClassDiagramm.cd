@@ -14,11 +14,11 @@
       <FileName>Controler\Controler.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Field Name="argumentsValidator" />
-      <Field Name="commandArgumentsParser" />
-      <Field Name="compareEnvelops" />
       <Field Name="firstEnvelope" />
       <Field Name="secondEnvelope" />
+      <Field Name="compareEnvelops" />
+      <Field Name="argumentsValidator" />
+      <Field Name="commandArgumentsParser" />
       <Field Name="UI" />
     </ShowAsAssociation>
   </Class>
@@ -79,7 +79,7 @@
     <TypeIdentifier />
   </Interface>
   <Enum Name="EnvelopeComparison.EnvelopeCompareStages" Collapsed="true">
-    <Position X="7.75" Y="4" Width="1.5" />
+    <Position X="8.5" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAhAAAAAAAAAAAAAQAA=</HashCode>
       <FileName>Enum\EnvelopeCompareStages.cs</FileName>

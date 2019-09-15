@@ -8,17 +8,33 @@ using Xunit;
 
 namespace LuckyTicketTests
 {
-    public class LuckyTicketValidatorTests
+    public class LuckyTicketValidatorTests : IClassFixture<LuckyTicketValidator>
     {
-        [Theory]
-        [InlineData("pjdbpodf",  false)]
-        [InlineData("PiTeR", true)]
-        [InlineData("mOSKoW", true)]
-        [InlineData("mOSKoWPiTeR", false)]
-        public void LuckyTicketValidatorTest(string algorithmName, bool expected)
+        private ILuckyTicketValidator validator;
+
+        public LuckyTicketValidatorTests(LuckyTicketValidator validator)
         {
-            ILuckyTicketValidator validator = new LuckyTicketValidator();
-            Assert.Equal(validator.IsRightAlgorithm(algorithmName), expected);
+            this.validator = validator;
+        }
+
+        [Theory]
+        [InlineData("PiTeR")]
+        [InlineData("mOSKoW")]
+        [InlineData("moskow")]
+        [InlineData("piter")]
+        public void LuckyTicketValidator_WithsAlgorithmName_ShouldReturnsTrue(string algorithmName)
+        {
+            Assert.True(validator.IsRightAlgorithm(algorithmName));
+        }
+
+        [Theory]
+        [InlineData("PiTe")]
+        [InlineData("mOS")]
+        [InlineData("sdgvsd")]
+        [InlineData("iter")]
+        public void LuckyTicketValidator_WithAlgorithmName_ShouldReturnsFalse(string algorithmName)
+        {
+            Assert.False(validator.IsRightAlgorithm(algorithmName));
         }
     }
 }

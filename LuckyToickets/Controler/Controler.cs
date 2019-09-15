@@ -22,24 +22,22 @@ namespace LuckyTickets
 
         private List<Ticket> ticketList;
 
-        private Logger logger;
+        private static Logger logger = LogManager.GetCurrentClassLogger();
 
         private const int SIZE_OF_THE_COMMAND_ARGUMENTS_ARRAY = 2;
 
         #endregion
 
-        private void Initialize()
+        public Controler(ILuckyTicketValidator validator, ILuckyTicketParser parser)
         {
-            ticketValidator = new LuckyTicketValidator();
-            luckyTicketParser = new LuckyTicketParser();
+            ticketValidator = validator;
+            luckyTicketParser = parser;
             ticketList = new List<Ticket>();
-            logger = LogManager.GetCurrentClassLogger();
             logger.Info("Parser and validator objects were created");
         }
 
         public void Run(string[] commandArguments )
         {
-            Initialize();
             if (!ValidateArguments(commandArguments))
             {
                 return;

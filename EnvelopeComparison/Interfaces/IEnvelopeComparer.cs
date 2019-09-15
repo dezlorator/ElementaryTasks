@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EnvelopeComparison
 {
-    interface IEnvelopeComparer
+    public interface IEnvelopeComparer
     {
         EnvelopeCompareStages CompareEnvelops(Envelope first, Envelope second);
     }

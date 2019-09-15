@@ -12,7 +12,7 @@ namespace EnvelopeComparison
 	{
 		static void Main(string[] args)
 		{
-            Controler controler = new Controler(new UI());
+            Controler controler = new Controler(new UI(), new EnvelopeComparer(), new CommandArgumentsParser());
             controler.Run();
         }
 	}

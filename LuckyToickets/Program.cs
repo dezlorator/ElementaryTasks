@@ -10,7 +10,7 @@ namespace LuckyTickets
     {
         static void Main(string[] args)
         {
-            Controler controler = new Controler();
+            Controler controler = new Controler(new LuckyTicketValidator(), new LuckyTicketParser());
             controler.Run(args);
             Console.ReadLine();
         }

@@ -31,15 +31,11 @@ namespace EnvelopeComparison
 
         #endregion
 
-        public Controler(IUserUI UI)
+        public Controler(IUserUI UI, IEnvelopeComparer comparer, ICommandArgumentsParser parser)
         {
             this.UI = UI;
-        }
-
-        private void Initialize()
-        {
-            compareEnvelops = new EnvelopeComparer();
-            commandArgumentsParser = new CommandArgumentsParser();
+            compareEnvelops = comparer;
+            commandArgumentsParser = parser;
             logger.Info("Parser and comparer objects were created");
         }
 
@@ -48,7 +44,6 @@ namespace EnvelopeComparison
             string usersChoose;
             do
             {
-                Initialize();
                 firstEnvelope = GetEnvelope(commandArgumentsParser.SplitStringIntoArray
                     (UI.GetUserEnvelope()));
                 secondEnvelope = GetEnvelope(commandArgumentsParser.SplitStringIntoArray
